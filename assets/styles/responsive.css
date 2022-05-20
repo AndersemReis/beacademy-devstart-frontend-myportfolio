@@ -1,3 +1,4 @@
+/*ajuste de resposividade */
 @media (max-width: 1260px) {
     .s-success .container {
       flex-direction: column;
@@ -199,4 +200,5 @@
       font-size: 50.2%;
     }
   }
+
   
