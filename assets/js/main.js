@@ -34,10 +34,3 @@ const scrollReveal = ScrollReveal({
     "nav .menu li .menu-item, nav .btn-primary, nav .menu-social li a"
   );
   
-  for (const link of links) {
-    link.addEventListener("click", () => {
-      nav.classList.remove("show");
-    });
-  }
-  
-  

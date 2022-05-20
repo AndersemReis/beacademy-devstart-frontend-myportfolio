@@ -16,9 +16,11 @@
     <link rel="stylesheet" href="./assets/styles/pattern.css" />
     <link rel="stylesheet" href="./assets/styles/style.css" />
     <link rel="stylesheet" href="./assets/styles/responsive.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
 
 </head>
 <body>
+   
     <header>
         <div class="container">
             <div class="logo">
@@ -161,16 +163,27 @@
               <div class="title-cases">
                 <h2>CASES<span>.</span></h2>
               </div>
-              <div class="cases">
-                <div class="case">
-                  <img src="./assets/img/case1.jpg" alt="Case 1" />
+              <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide"
+                  style="background-image: url(./assets/img/case1.jpg);"></div>
+                  <div class="swiper-slide"
+                  style="background-image: url(./assets/img/case2.jpg);"></div>
+                  <div class="swiper-slide"
+                  style="background-image: url(./assets/img/case3.jpg);"></div>
+                
                 </div>
-                <div class="case">
-                  <img src="./assets/img/case2.jpg" alt="Case 2" />
-                </div>
-                <div class="case">
-                  <img src="./assets/img/case3.jpg" alt="Case 3" />
-                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+              
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
               </div>
             </div>
           </section>
@@ -182,7 +195,7 @@
                   ENTRE EM <br />
                   CONTATO<span>.</span>
                 </h2>
-                <span class="tag">#LetsGoUp 🚀</span>
+                <span class="tag">#LetsGo</span>
               </div>
     
               <form class="form-contact" method="post" action="">
@@ -212,5 +225,40 @@
             </div>
           </div>
         </footer>
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script>
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  loop: true,
+        effect: "cube",
+        grabCursor: true,
+        cubeEffect: {
+          shadow: true,
+          slideShadows: true,
+          shadowOffset: 20,
+          shadowScale: 0.94,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      
+    
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
+            </script>
 </body>
 </html>

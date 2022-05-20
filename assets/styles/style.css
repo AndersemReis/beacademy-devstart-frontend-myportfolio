@@ -218,6 +218,20 @@ header .container {
     max-height: 500px;
   }
 
+  .swiper {
+    width: 90%;
+    height: 400px;
+  }
+  
+  .swiper .swiper-wrapper .swiper-slide{
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    
+    align-items:center;
+    font-size: 6.0rem;
+
+  }
   .s-cases {
     padding: 4.5rem 0;
     margin-bottom: 8rem;
