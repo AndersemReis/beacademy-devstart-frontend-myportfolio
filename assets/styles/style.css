@@ -197,6 +197,7 @@ header .container {
     font-size: 1.6rem;
     color: rgba(255, 255, 255, 0.83);
     margin-top: 2.4rem;
+    text-align: justify;
   }
   
   .s-about .container .about-me ul {
