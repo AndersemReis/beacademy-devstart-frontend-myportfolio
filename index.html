@@ -226,39 +226,52 @@
           </div>
         </footer>
         <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-<script>
-const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  loop: true,
-        effect: "cube",
-        grabCursor: true,
-        cubeEffect: {
-          shadow: true,
-          slideShadows: true,
-          shadowOffset: 20,
-          shadowScale: 0.94,
-        },
+        const nav = document.querySelector("header .container nav");
+  
+        const toggle = document.querySelectorAll(".toggle");
+        
+        for (element of toggle) {
+          element.addEventListener("click", () => {
+            nav.classList.toggle("show");
+          });
+        }
+        
+        const links = document.querySelectorAll(
+          "nav .menu li .menu-item, nav .btn-primary, nav .menu-social li a"
+        );
+        <script>
+      const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        loop: true,
+              effect: "cube",
+              grabCursor: true,
+              cubeEffect: {
+                shadow: true,
+                slideShadows: true,
+                shadowOffset: 20,
+                shadowScale: 0.94,
+              },
+              pagination: {
+                el: ".swiper-pagination",
+              },
+            
+          
+        // If we need pagination
         pagination: {
-          el: ".swiper-pagination",
+          el: '.swiper-pagination',
         },
       
-    
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
-});
-            </script>
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      
+        // And if we need scrollbar
+        scrollbar: {
+          el: '.swiper-scrollbar',
+        },
+      });
+                  </script>
 </body>
 </html>
