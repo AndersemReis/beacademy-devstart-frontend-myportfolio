@@ -1,0 +1,32 @@
+.container{
+    width: 25rem;
+    height: auto;
+    padding: 1rem;
+    background-color: blue;
+    margin-bottom: .5rem;
+
+}
+.text-box h2{
+    color: white;
+    font-size: 1.5rem;
+}
+.text-box p{
+    color: wheat;
+}
+
+@media (min-width: 575px){
+    .container{
+        background: red;
+        margin-bottom: 1rem;
+    }
+}
+@media (min-width: 768px){
+    .container{
+        width: 40.6rem;
+        background: green;
+        margin-bottom: 1.12rem;
+    }
+    .text-box h2, .text-box p{
+        color: aqua;
+    }
+}
